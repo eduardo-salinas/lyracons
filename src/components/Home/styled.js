@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const StyledHome = styled.div`
 .title{
-    margin:1.5rem 0rem 1rem 4rem;
+    margin:1.5rem 0rem 1rem 5rem;
     padding:0;
     .temp{
         display:flex;
@@ -18,11 +18,32 @@ const StyledHome = styled.div`
         margin-top: -.2rem;
     }
 }
-.products{
+.all{
     border-top:solid 1px #D9D9D9;
-    margin-left:3rem;
-    margin-right: 3rem;
+    margin-left:5%;
+    margin-right: 5%;
+    display: flex;
+    .products{
+        padding-left: 1.5rem;
+        display:grid;
+        grid-template-columns: repeat(3,0fr);
+        grid-gap: 1rem;
+        justify-content: center;
+    }
+    .top{
+        padding-left: 2rem;
+        width:100%;
+        display:flex;
+        justify-content:space-between;
+        font: normal normal normal 13px/16px Montserrat;
+        letter-spacing: 1.3px;
+        color: #697078;
+        select{
+            border:none;
+        }
+    }
 }
+margin-bottom: 3rem;
 `
 
 export default StyledHome;
