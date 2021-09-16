@@ -10,18 +10,18 @@ const NavBar = () => {
             <Grid container spacing={1} className="nav">
                 <img src={logo} alt="logo" />
                 <div className="list">
-                    <Link>SHOP</Link>
-                    <Link>REAL WINTER</Link>
-                    <Link>COMPLEMENTOS</Link>
-                    <Link>EDITORIALES</Link>
+                    <Link href="#">SHOP</Link>
+                    <Link href="#">REAL WINTER</Link>
+                    <Link href="#">COMPLEMENTOS</Link>
+                    <Link href="#">EDITORIALES</Link>
                 </div>
                 <div className="search">
                     <input placeholder="BUSCAR" />
                     <img src={search} alt="search" />
                 </div>
                 <div className="nav-end">
-                    <Link>INGRESAR</Link>
-                    <Link>CARRITO</Link>
+                    <Link href="#">INGRESAR</Link>
+                    <Link href="#">CARRITO</Link>
                     <img className="wallet" src={wallet} alt="wallet" />
                 </div>
             </Grid>
