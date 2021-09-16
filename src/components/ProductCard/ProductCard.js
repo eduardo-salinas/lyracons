@@ -10,8 +10,8 @@ const ProductCard = ({ product }) => {
                     <img src={img} alt="imageSrc" />}
                 <p className="name">{product.name}</p>
                 <div className="prices">
-                    {product.listPrice && <p className="listPrice">{product.listPrice}</p>}
-                    <p className="bestPrice">{product.bestPrice}</p>
+                    {product.listPrice && <p className="listPrice">{"$"+product.listPrice}</p>}
+                    <p className="bestPrice">{"$"+product.bestPrice}</p>
                 </div>
                 {product.fees && <p className="fees">{"Hasta " + product.fees + " cuotas sin interes"} </p>}
             </Paper>

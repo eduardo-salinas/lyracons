@@ -1,4 +1,4 @@
-import { Grid, Link, TextField } from "@material-ui/core";
+import { Grid, Link } from "@material-ui/core";
 import StyledFooter from "./styled";
 
 const Footer = () => {

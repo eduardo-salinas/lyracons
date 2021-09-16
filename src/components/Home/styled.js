@@ -8,7 +8,7 @@ const StyledHome = styled.div`
     .temp{
         display:flex;
         font: normal normal normal 11px/18px Montserrat;     
-   color: #000000;
+        color: #000000;
    p{
        padding-left:.5rem;
    }
@@ -24,9 +24,12 @@ const StyledHome = styled.div`
     margin-right: 5%;
     display: flex;
     .products{
+        @media screen and (max-width: 700px){
+            grid-template-columns: repeat(1,1fr);
+        }
         padding-left: 1.5rem;
         display:grid;
-        grid-template-columns: repeat(3,0fr);
+        grid-template-columns: repeat(3,1fr);
         grid-gap: 1rem;
         justify-content: center;
     }
@@ -41,6 +44,22 @@ const StyledHome = styled.div`
         select{
             border:none;
         }
+    }
+}
+.more{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    button{
+        margin-top: 1rem;
+        height: 2.5rem;
+        width: 10rem;
+        background: #000000 0% 0% no-repeat padding-box;
+        border-radius: 4px;
+        font: normal normal bold 12px/15px Montserrat;
+        letter-spacing: 0.24px;
+        color: #FFFFFF;
     }
 }
 margin-bottom: 3rem;
