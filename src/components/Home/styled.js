@@ -3,15 +3,22 @@ import styled from "styled-components";
 
 const StyledHome = styled.div`
 .title{
+    @media screen and (max-width: 600px){
+       text-align:center;
+       margin:1rem 0;
+    }
     margin:1.5rem 0rem 1rem 5rem;
     padding:0;
     .temp{
+        @media screen and (max-width: 600px){
+            display:none;
+        }
         display:flex;
         font: normal normal normal 11px/18px Montserrat;     
         color: #000000;
    p{
        padding-left:.5rem;
-   }
+    }
     }
     h1{
         font: normal normal 300 28px/30px Montserrat;
@@ -24,8 +31,9 @@ const StyledHome = styled.div`
     margin-right: 5%;
     display: flex;
     .products{
-        @media screen and (max-width: 700px){
+        @media screen and (max-width: 600px){
             grid-template-columns: repeat(1,1fr);
+            padding:0;
         }
         padding-left: 1.5rem;
         display:grid;
@@ -34,6 +42,9 @@ const StyledHome = styled.div`
         justify-content: center;
     }
     .top{
+        @media screen and (max-width: 600px){
+               padding-left:0;
+            }
         padding-left: 2rem;
         width:100%;
         display:flex;
@@ -43,6 +54,10 @@ const StyledHome = styled.div`
         color: #697078;
         select{
             border:none;
+        }
+        .order{
+            @media screen and (max-width: 600px){
+                display:none;}
         }
     }
 }

@@ -28,7 +28,7 @@ img{
 }
 .fees{
     margin-top:-.7rem;
-    font: normal normal normal 12px/20px Montserrat;
+    font: normal normal bold 12px/20px Montserrat;
     color: #D81313;
 }
 `

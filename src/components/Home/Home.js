@@ -6,10 +6,12 @@ import moreProducts from '../../moreProducts';
 import Filtrer from '../Filtrer/Filtrer';
 import ProductCard from '../ProductCard/ProductCard';
 import StyledHome from './styled';
+import FiltrerMobile from '../FiltrerMobile/FiltrerMobile';
 
 const Home = () => {
+    
     const [more, setMore] = useState(false);
-    console.log(moreProducts)
+
     return (
         <StyledHome>
             <Grid className="title">
@@ -18,13 +20,14 @@ const Home = () => {
                     <p>Invierno 2020</p>
                 </div>
                 <h1>Título de categoría</h1>
+                <FiltrerMobile/>
             </Grid>
             <Grid className="all">
                 <Filtrer />
                 <Grid>
                     <Grid className="top">
                         <p>{products.length + " PRODUCTOS"}</p>
-                        <p>ORDERNAR POR: Relevancia <select /></p>
+                        <p className="order">ORDERNAR POR: Relevancia <select /></p>
                     </Grid>
                     <Grid className="products">
                         {products && products.map(p =>

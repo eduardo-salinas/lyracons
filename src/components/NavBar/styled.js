@@ -10,6 +10,8 @@ const StyledNav = styled.div`
     padding: 1rem;
 }
 .list{
+    @media screen and (max-width: 600px){
+        display:none;}
     a{
         letter-spacing: 1.4px;
         font-weight:700;
@@ -20,6 +22,8 @@ const StyledNav = styled.div`
     }
 }
 .search{
+    @media screen and (max-width: 600px){
+        display:none;}
     display:flex;
     color:#989898;
     border-bottom: solid #989898 1px;
@@ -32,6 +36,8 @@ const StyledNav = styled.div`
     }
 }
 .nav-end{
+    @media screen and (max-width: 600px){
+        display:none;}
     display:flex;
     align-items: center;
     font-size: 12px;

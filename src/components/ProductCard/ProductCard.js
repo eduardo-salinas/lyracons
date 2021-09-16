@@ -13,7 +13,7 @@ const ProductCard = ({ product }) => {
                     {product.listPrice && <p className="listPrice">{"$"+product.listPrice}</p>}
                     <p className="bestPrice">{"$"+product.bestPrice}</p>
                 </div>
-                {product.fees && <p className="fees">{"Hasta " + product.fees + " cuotas sin interes"} </p>}
+                {product.fees && <p className="fees">{"Hasta " + product.fees + " cuotas"} </p>}
             </Paper>
         </StyledCard >
     )

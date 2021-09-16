@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 
 const StyledFiltrer = styled.div`
+    @media screen and (max-width: 700px){
+        display:none;
+    }
     width: 18rem;
     margin-left:.8rem;
 .filtrer{
