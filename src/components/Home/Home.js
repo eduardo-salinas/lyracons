@@ -1,4 +1,4 @@
-import { Grid } from '@material-ui/core';
+import { Button, Grid } from '@material-ui/core';
 import { useState } from 'react';
 import next from '../../assets/next.svg';
 import prev from '../../assets/prev.svg';
@@ -47,7 +47,7 @@ const Home = () => {
                             <button  onClick={() => setMore(false)}>Ver menos productos</button>
                         </> :
                             <button  onClick={() => setMore(true)}>Ver más productos</button>}
-                    </Grid>
+                    </Grid>                    
                 </Grid>
             </Grid>
         </StyledHome>
