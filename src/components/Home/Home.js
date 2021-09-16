@@ -1,6 +1,7 @@
 import { Grid } from '@material-ui/core';
 import { useState } from 'react';
-import n from '../../assets/next.svg';
+import next from '../../assets/next.svg';
+import prev from '../../assets/prev.svg';
 import products from '../../pruducts.js';
 import moreProducts from '../../moreProducts';
 import Filtrer from '../Filtrer/Filtrer';
@@ -15,10 +16,14 @@ const Home = () => {
     return (
         <StyledHome>
             <Grid className="title">
-                <div className="temp">
-                    <img src={n} alt="n" />
+                <Grid className="season">
+                    <img src={next} alt="next" />
                     <p>Invierno 2020</p>
-                </div>
+                </Grid>
+                <Grid className="season-mobile">
+                    <img src={prev} alt="prev" />
+                    <p>Invierno 2020</p>
+                </Grid>
                 <h1>Título de categoría</h1>
                 <FiltrerMobile/>
             </Grid>

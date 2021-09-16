@@ -2,6 +2,26 @@ import styled from "styled-components";
 
 
 const StyledNav = styled.div`
+.menu-app{
+    @media screen and (min-width: 600px){
+        display:none;
+    }
+    display:flex;
+    margin-left:-.5rem;
+    img{
+        margin-left:-1rem;
+    }
+}
+.app-wallet{
+    @media screen and (min-width: 600px){
+        display:none;
+    }
+}
+.logo{
+    @media screen and (max-width: 600px){
+    margin:0 1rem 0 1rem;
+    }
+}
 .nav{
     display:flex;
     justify-content: space-around;

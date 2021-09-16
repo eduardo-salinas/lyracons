@@ -1,14 +1,25 @@
-import { Link, Grid } from '@material-ui/core';
+import { Link, Grid, IconButton, Toolbar,  } from '@material-ui/core';
 import logo from '../../assets/lyracons-icon.svg';
 import wallet from '../../assets/wallet.svg'
+import menu from '../../assets/menu.svg'
 import search from '../../assets/search.svg'
 import StyledNav from './styled';
 
 const NavBar = () => {
+
     return (
         <StyledNav>
             <Grid container spacing={1} className="nav">
-                <img src={logo} alt="logo" />
+                <Grid className="menu-app">
+                    <Toolbar variant="dense">
+                        <IconButton edge="start"  color="inherit" aria-label="menu" sx={{ mr: 2 }}>
+                            <img src={menu} alt="" />
+                        </IconButton>
+                    </Toolbar>
+                    <img src={search} alt="search" />
+                </Grid>
+                <img className="logo" src={logo} alt="logo" />
+                <img className="app-wallet" src={wallet} alt="wallet" />
                 <Grid className="list">
                     <Link href="#">SHOP</Link>
                     <Link href="#">REAL WINTER</Link>

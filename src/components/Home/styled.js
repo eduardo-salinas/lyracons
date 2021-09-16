@@ -3,14 +3,24 @@ import styled from "styled-components";
 
 const StyledHome = styled.div`
 .title{
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 800px){
        text-align:center;
        margin:1rem 0;
     }
     margin:1.5rem 0rem 1rem 5rem;
     padding:0;
-    .temp{
-        @media screen and (max-width: 600px){
+    .season-mobile{
+        @media screen and (min-width: 800px){
+            display:none;
+        }
+        display:flex;
+        margin: -1rem 0 0 1rem;
+        p{
+       padding-left:1rem;
+    }
+    }
+    .season{
+        @media screen and (max-width: 800px){
             display:none;
         }
         display:flex;
@@ -31,7 +41,11 @@ const StyledHome = styled.div`
     margin-right: 5%;
     display: flex;
     .products{
-        @media screen and (max-width: 600px){
+        @media screen and (max-width: 1200px){
+            grid-template-columns: repeat(2,1fr);
+            padding:0;
+        }
+        @media screen and (max-width: 800px){
             grid-template-columns: repeat(1,1fr);
             padding:0;
         }
@@ -42,7 +56,7 @@ const StyledHome = styled.div`
         justify-content: center;
     }
     .top{
-        @media screen and (max-width: 600px){
+        @media screen and (max-width: 800px){
                padding-left:0;
             }
         padding-left: 2rem;
@@ -56,7 +70,7 @@ const StyledHome = styled.div`
             border:none;
         }
         .order{
-            @media screen and (max-width: 600px){
+            @media screen and (max-width: 800px){
                 display:none;}
         }
     }
