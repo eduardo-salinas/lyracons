@@ -2,11 +2,13 @@ import styled from "styled-components";
 
 
 const StyledHeader = styled.div`
-display:flex;
-align-items: center;
-justify-content: center;
-background-color: #000000;
-color:#FFFFFF;
+.header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    color:#FFFFFF;
+}
 h3{
     font-size: 12px;
     letter-spacing: 0.3px;
@@ -19,4 +21,5 @@ h1{
     letter-spacing: 0.12px;
 }
 `
-export default StyledHeader
+
+export default StyledHeader;
