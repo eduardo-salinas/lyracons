@@ -1,4 +1,4 @@
-import { Button, Grid } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import { useState } from 'react';
 import next from '../../assets/next.svg';
 import prev from '../../assets/prev.svg';
@@ -10,7 +10,7 @@ import StyledHome from './styled';
 import FiltrerMobile from '../FiltrerMobile/FiltrerMobile';
 
 const Home = () => {
-    
+
     const [more, setMore] = useState(false);
 
     return (
@@ -25,7 +25,7 @@ const Home = () => {
                     <p>Invierno 2020</p>
                 </Grid>
                 <h1>Título de categoría</h1>
-                <FiltrerMobile/>
+                <FiltrerMobile />
             </Grid>
             <Grid className="all">
                 <Filtrer />
@@ -44,10 +44,10 @@ const Home = () => {
                             <Grid className="products">
                                 {moreProducts.products.map(p => <ProductCard product={p} />)}
                             </Grid>
-                            <button  onClick={() => setMore(false)}>Ver menos productos</button>
+                            <button onClick={() => setMore(false)}>Ver menos productos</button>
                         </> :
-                            <button  onClick={() => setMore(true)}>Ver más productos</button>}
-                    </Grid>                    
+                            <button onClick={() => setMore(true)}>Ver más productos</button>}
+                    </Grid>
                 </Grid>
             </Grid>
         </StyledHome>

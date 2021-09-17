@@ -29,16 +29,43 @@ const StyledNav = styled.div`
     border-bottom: solid #D9D9D9 1px;
     padding: 1rem;
 }
-.list{
+.list{    
     @media screen and (max-width: 600px){
-        display:none;}
-    a{
-        letter-spacing: 1.4px;
-        font-weight:700;
-        font: normal normal normal 14px/20px Montserrat;
-        color:#000000;
-        text-decoration:none;
-        margin-right: 1rem;
+        display:none;
+    }
+    font: normal normal normal 14px/20px Montserrat;
+    letter-spacing: 1.4px;
+    font-weight:700;
+    .menu{
+        list-style:none;
+        li{
+            a{
+                display:block;
+                text-decoration:none;
+                color:#000000;
+                padding: .5rem;
+                border-radius: .2rem;
+            } 
+            a:hover{
+                background-color:#D9D9D9 ;
+            }         
+            float:left;
+        }
+        ul{
+            text-align: center;
+            display:none;
+            position: absolute;
+            max-width: 8rem;
+            list-style:none;
+            padding:1rem;
+            background-color: #FFFFFF;
+            border:1px solid #D9D9D9;
+        }
+        li:hover {
+            ul{
+                display:block;
+            }
+        }
     }
 }
 .search{
