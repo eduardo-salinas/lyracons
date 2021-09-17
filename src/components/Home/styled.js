@@ -92,6 +92,19 @@ const StyledHome = styled.div`
     }
 }
 margin-bottom: 3rem;
+.grilla{
+    margin-left: 20rem;
+    button{
+        margin-top: 1rem;
+        height: 2.5rem;
+        width: 10rem;
+        background: #000000 0% 0% no-repeat padding-box;
+        border-radius: 4px;
+        font: normal normal bold 12px/15px Montserrat;
+        letter-spacing: 0.24px;
+        color: #FFFFFF;
+    }
+}
 `
 
 export default StyledHome;

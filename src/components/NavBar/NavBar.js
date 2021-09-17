@@ -5,7 +5,7 @@ import menu from '../../assets/menu.svg'
 import search from '../../assets/search.svg'
 import StyledNav from './styled';
 
-const NavBar = () => {
+const NavBar = ({setGrilla}) => {
 
     return (
         <StyledNav>
@@ -22,16 +22,16 @@ const NavBar = () => {
                 <img className="app-wallet" src={wallet} alt="wallet" />
                 <Grid className="list">
                     <ul className="menu">
-                        <li ><a href="#" >SHOP</a>
+                        <li ><a href="#/2" >SHOP</a>
                             <ul>
-                                <li><a href="#">Pantalones</a></li>
-                                <li><a href="#">Remeras</a></li>
-                                <li><a href="#">Camperas</a></li>
+                                <li><a href="#/">Pantalones</a></li>
+                                <li><a href="#/">Remeras</a></li>
+                                <li><a href="#/3">Camperas</a></li>
                             </ul>
                         </li>
-                        <li ><a href="#">REAL WINTER</a></li>
-                        <li><a href="#">COMPLEMENTOS</a></li>
-                        <li><a href="#">EDITORIALES</a></li>
+                        <li id="real-winter"><a href="#1">REAL WINTER</a></li>
+                        <li><a href="#/">COMPLEMENTOS</a></li>
+                        <li><a href="#/">EDITORIALES</a></li>
                     </ul>
                 </Grid>
                 <Grid className="search">
@@ -39,8 +39,8 @@ const NavBar = () => {
                     <img src={search} alt="search" />
                 </Grid>
                 <Grid className="nav-end">
-                    <Link href="#">INGRESAR</Link>
-                    <Link href="#">CARRITO</Link>
+                    <Link onClick={()=>{setGrilla(false)}} href="#/">INGRESAR</Link>
+                    <Link href="#/">CARRITO</Link>
                     <img className="wallet" src={wallet} alt="wallet" />
                 </Grid>
             </Grid>

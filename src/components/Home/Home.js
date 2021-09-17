@@ -9,9 +9,10 @@ import ProductCard from '../ProductCard/ProductCard';
 import StyledHome from './styled';
 import FiltrerMobile from '../FiltrerMobile/FiltrerMobile';
 
-const Home = () => {
+const Home = ({ grilla, setGrilla }) => {
 
     const [more, setMore] = useState(false);
+
 
     return (
         <StyledHome>
@@ -24,12 +25,12 @@ const Home = () => {
                     <img src={prev} alt="prev" />
                     <p>Invierno 2020</p>
                 </Grid>
-                <h1>Título de categoría</h1>
+                <h1 id="title">Título de categoría</h1>
                 <FiltrerMobile />
             </Grid>
             <Grid className="all">
                 <Filtrer />
-                <Grid>
+                {grilla? <Grid>
                     <Grid className="top">
                         <p>{products.length + " PRODUCTOS"}</p>
                         <p className="order">ORDERNAR POR: Relevancia <select /></p>
@@ -48,7 +49,10 @@ const Home = () => {
                         </> :
                             <button onClick={() => setMore(true)}>Ver más productos</button>}
                     </Grid>
-                </Grid>
+                </Grid>:
+                <Grid className="grilla">
+                <button onClick={()=>{setGrilla(true)}}>Ver grilla</button>
+                </Grid>}
             </Grid>
         </StyledHome>
     )

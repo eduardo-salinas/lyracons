@@ -23,7 +23,7 @@ const FiltrerMobile = () => {
                     <Grid className="modal-container">
                         <Grid className="modal-top">
                             <h1>Filtrá por: </h1>
-                            <a href="#"><img src={close} alt="" /></a>
+                            <a href="#1"><img src={close} alt="" /></a>
                         </Grid>
                         <Grid className="modal-size">
                             <p>Talle: </p>
