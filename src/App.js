@@ -7,11 +7,10 @@ import { useState, useEffect } from 'react';
 
 function App() {
   const [grilla, setGrilla] = useState(true);
-  var origin;
-  var destiny;
+ 
   useEffect(() => {
-    origin = document.getElementById("real-winter");
-    destiny = document.getElementById("title");
+    var origin = document.getElementById("real-winter");
+    var destiny = document.getElementById("title");
     if (origin) {
       origin.addEventListener("mouseover", () => {
         destiny.className = "destiny";
@@ -21,15 +20,7 @@ function App() {
       }, false)
     }
   }, [])
-
-  if (origin) {
-    origin.addEventListener("mouseover", () => {
-      destiny.className = "destiny";
-    }, false)
-    origin.addEventListener("mouseout", () => {
-      destiny.className = "";
-    }, false)
-  }
+  
   return (
     <>
       <GlobalStyles />
