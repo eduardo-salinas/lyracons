@@ -2,6 +2,7 @@ import { Grid, Link } from "@material-ui/core";
 import StyledFooter from "./styled";
 
 const Footer = () => {
+
     return (
         <StyledFooter>
             <Grid className="footer">

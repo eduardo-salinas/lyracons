@@ -29,7 +29,7 @@ const NavBar = ({setGrilla}) => {
                                 <li><a href="#/3">Camperas</a></li>
                             </ul>
                         </li>
-                        <li id="real-winter"><a href="#1">REAL WINTER</a></li>
+                        <li id="real-winter"><a href="#">REAL WINTER</a></li>
                         <li><a href="#/">COMPLEMENTOS</a></li>
                         <li><a href="#/">EDITORIALES</a></li>
                     </ul>
