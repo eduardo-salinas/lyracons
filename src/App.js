@@ -8,7 +8,7 @@ import { useState, useEffect } from 'react';
 function App() {
   const [grilla, setGrilla] = useState(true);
 
-  const color = () => {
+  var color = () => {
     var origin = document.getElementById("real-winter");
     var destiny = document.getElementById("title");
     if (origin) {
@@ -22,7 +22,7 @@ function App() {
   }
   useEffect(() => {
     color();
-  }, [color])
+  }, [])
 
   return (
     <>
